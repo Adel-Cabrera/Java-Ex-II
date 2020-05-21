@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<!-- etiqueta nombre del proyecto-->
+    <display-name>SimpleServletProject</display-name>
+
+<!--    etiqueta para indicar los datos del servlet-->
+    <servlet>
+<!--        nombre del servlet-->
+        <servlet-name>simpleServlet</servlet-name>
+<!--        clase que implementa el servlet-->
+        <servlet-class>org.codingdojo.tutorial.SimpleServlet</servlet-class>
+    </servlet>
+
+<!--    etiqueta que indica mapeo del servlet-->
+    <servlet-mapping>
+        <servlet-name>simpleServlet</servlet-name>
+<!--        ruta | endpoint del servlet-->
+        <url-pattern>/simpleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>xmlServlet</servlet-name>
+        <servlet-class>or.codingdojo.tutorial.XmlServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>xmlServlet</servlet-name>
+        <url-pattern>/xmlServletpath</url-pattern>
+    </servlet-mapping>
+
+<!--    etiqueta que indica que archivo será mostrado como bienvenida (home site) -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
